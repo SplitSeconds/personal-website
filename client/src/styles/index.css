@@ -8,7 +8,7 @@ body {
   padding: 10px 20px;
   border-radius: 10px;
   display: inline-block;
-  background-color: #5776e9;
+  background-color: grey;
   color: white; }
 
 .info.info-danger {
@@ -20,7 +20,7 @@ body {
     animation: App-logo-spin infinite 20s linear;
     height: 80px; }
   .App .App-header {
-    background-color: #32c3ff;
+    background-color: grey;
     padding: 20px;
     color: white; }
     .App .App-header a {

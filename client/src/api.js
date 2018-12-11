@@ -17,35 +17,6 @@ const errHandler = err => {
 export default {
   service: service,
 
-  isLoggedIn() {
-    return localStorage.getItem('user') != null
-  },
-
-  signup(userInfo) {
-    return service
-      .post('/signup', userInfo)
-      .then(res => {
-        // If we have localStorage.getItem('user') saved, the application will consider we are loggedin
-        localStorage.setItem('user', JSON.stringify(res.data))
-        res.data
-      })
-      .catch(errHandler)
-  },
-
-  login(username, password) {
-    return service
-      .post('/login', {
-        username,
-        password,
-      })
-      .then(res => {
-        // If we have localStorage.getItem('user') saved, the application will consider we are loggedin
-        localStorage.setItem('user', JSON.stringify(res.data))
-        return res.data
-      })
-      .catch(errHandler)
-  },
-
   logout() {
     localStorage.removeItem('user')
     return service

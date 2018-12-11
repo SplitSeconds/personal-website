@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import api from '../../api';
 
-class Secret extends Component {
+class About extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -12,15 +12,13 @@ class Secret extends Component {
   render() {
     return (
       <div className="Secret">
-        <h2>Secret</h2>
+        <h2>About</h2>
 
         <div className="result">
-          {this.state.secret}
+          ...
         </div>
 
-        {this.state.message && <div className="info info-danger">
-          {this.state.message}
-        </div>}
+        
       </div>
     );
   }
@@ -31,4 +29,4 @@ class Secret extends Component {
   }
 }
 
-export default Secret;
+export default About;

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import api from '../../api';
 
 
-class AddCountry extends Component {
+class Portfolio extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -50,21 +50,12 @@ class AddCountry extends Component {
   }
   render() {
     return (
-      <div className="AddCountry">
-        <h2>Add country</h2>
-        <form>
-          Name: <input type="text" value={this.state.name} onChange={(e) => { this.handleInputChange("name", e) }} /> <br />
-          Capitals: <input type="text" value={this.state.capitals} onChange={(e) => { this.handleInputChange("capitals", e) }} /> <br />
-          Area: <input type="number" value={this.state.area} onChange={(e) => { this.handleInputChange("area", e) }} /> <br />
-          Description: <textarea value={this.state.description} cols="30" rows="10" onChange={(e) => { this.handleInputChange("description", e) }} ></textarea> <br />
-          <button onClick={(e) => this.handleClick(e)}>Create country</button>
-        </form>
-        {this.state.message && <div className="info">
-          {this.state.message}
-        </div>}
+      <div className="Portfolio">
+        <h2>Design</h2>
+   
       </div>
     );
   }
 }
 
-export default AddCountry;
+export default Portfolio;

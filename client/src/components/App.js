@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Link, NavLink, Switch } from 'react-router-dom';
 import Home from './pages/Home';
-import Countries from './pages/Countries';
-import AddCountry from './pages/AddCountry';
-import Secret from './pages/Secret';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Blog from './pages/Blog';
+import Portfolio from './pages/Portfolio';
+import About from './pages/About';
+import Impressum from './pages/Impressum';
 import api from '../api';
-import logo from '../logo.svg';
 
 class App extends Component {
   constructor(props) {
@@ -26,25 +24,27 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">MERN Boilerplate</h1>
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <NavLink to="/" exact>Home</NavLink>
-          <NavLink to="/countries">Countries</NavLink>
-          <NavLink to="/add-country">Add country</NavLink>
-          {!api.isLoggedIn() && <NavLink to="/signup">Signup</NavLink>}
-          {!api.isLoggedIn() && <NavLink to="/login">Login</NavLink>}
-          {api.isLoggedIn() && <Link to="/" onClick={(e) => this.handleLogoutClick(e)}>Logout</Link>}
-          <NavLink to="/secret">Secret</NavLink>
+          <NavLink to="/about">About</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/imprint">Impressum</NavLink>
         </header>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/countries" component={Countries} />
-          <Route path="/add-country" component={AddCountry} />
-          <Route path="/signup" component={Signup} />
-          <Route path="/login" component={Login} />
-          <Route path="/secret" component={Secret} />
+          <Route path="/about" component={About} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/imprint" component={Impressum} />
           <Route render={() => <h2>404</h2>} />
         </Switch>
+        <div className="social-icons">
+          <a href="" className="Instagram"></a>
+          <a href="" className="Twitter"></a>
+          <a href="" className="Behance"></a>
+          <a href="" className="GitHub"></a>
+        </div>
       </div>
     );
   }
