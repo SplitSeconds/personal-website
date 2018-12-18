@@ -43,6 +43,6 @@ body {
 .Home p {
   font-size: 1.2em; }
 
-.Secret .result {
-  font-size: 1.2em;
-  color: #32c3ff; }
+.projects {
+  display: flex;
+  margin: 10px; }
