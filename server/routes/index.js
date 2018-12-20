@@ -1,5 +1,4 @@
 const express = require('express');
-const { isLoggedIn } = require('../middlewares')
 const router = express.Router();
 
 router.get('/about', (req, res, next) => {
@@ -10,6 +9,18 @@ router.get('/about', (req, res, next) => {
 });
 
 router.get('/portfolio', (req, res, next) => {
+  res.json({
+    secret: 42,
+    user: req.user
+  });
+});
+router.get('/webdev', (req, res, next) => {
+  res.json({
+    secret: 42,
+    user: req.user
+  });
+});
+router.get('/design', (req, res, next) => {
   res.json({
     secret: 42,
     user: req.user

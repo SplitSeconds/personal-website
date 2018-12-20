@@ -3,9 +3,11 @@ import { Route, Link, NavLink, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Portfolio from './pages/Portfolio';
+import Design from './pages/Design';
 import About from './pages/About';
 import Impressum from './pages/Impressum';
 import api from '../api';
+import Webdev from './pages/Webdev';
 
 class App extends Component {
   constructor(props) {
@@ -35,6 +37,8 @@ class App extends Component {
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio} />
+          <Route path="/webdev" component={Webdev} />
+          <Route path="/design" component={Design} />
           <Route path="/blog" component={Blog} />
           <Route path="/imprint" component={Impressum} />
           <Route render={() => <h2>404</h2>} />

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Link, NavLink, Switch } from 'react-router-dom';
 import Design from './Design';
 import Webdev from './Webdev';
 
@@ -13,22 +14,18 @@ class Portfolio extends Component {
   handleClick(e) {
     e.preventDefault()
     console.log('click')
-        setTimeout(() => {
-          this.setState({
-            message: null
-          })
-        }, 2000)
-      
-      .catch(err => this.setState({ message: err.toString() }))
+    .catch(err => this.setState({ message: err.toString() }))
   }
   render() {
     return (
+      
       <div className="Portfolio">
-        <h2>Design</h2>
-        <Design />
-   
-        <h2>Webdev></h2>
-        <Webdev />
+      <NavLink to="/design">Design</NavLink>
+      <NavLink to="/webdev">Webdev</NavLink>
+      <Switch>
+          <Route path="/design" component={Design} />
+          <Route path="/webdev" component={Webdev} />
+      </Switch>
       </div>
     );
   }
