@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link, NavLink, Switch } from 'react-router-dom';
+import { Route, NavLink, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Portfolio from './pages/Portfolio';
@@ -32,6 +32,12 @@ class App extends Component {
           <NavLink to="/portfolio">Portfolio</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           <NavLink to="/imprint">Impressum</NavLink>
+        <div className="social-icons">
+          <a href="https://www.instagram.com/split_seconds/" target="_blank" rel="noopener noreferrer" className="Instagram"><img src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545571066/My-Webpage/002-logo.png" alt="insta icon" /></a>
+          <a href="https://twitter.com/_SplitSeconds" target="_blank" rel="noopener noreferrer" className="Twitter"><img src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545571066/My-Webpage/003-twitter.png" alt="twitter icon" /></a>
+          <a href="https://www.behance.net/Split_Seconds" target="_blank" rel="noopener noreferrer" className="Behance"><img src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545571066/My-Webpage/001-behance.png" alt="behance icon" /></a>
+          <a href="https://github.com/SplitSeconds" target="_blank" rel="noopener noreferrer" className="GitHub"><img src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545571066/My-Webpage/004-github.png" alt="github icon" /></a>
+        </div>
         </header>
         <Switch>
           <Route path="/" exact component={Home} />
@@ -43,12 +49,6 @@ class App extends Component {
           <Route path="/imprint" component={Impressum} />
           <Route render={() => <h2>404</h2>} />
         </Switch>
-        <div className="social-icons">
-          <a href="" className="Instagram"></a>
-          <a href="" className="Twitter"></a>
-          <a href="" className="Behance"></a>
-          <a href="" className="GitHub"></a>
-        </div>
       </div>
     );
   }
