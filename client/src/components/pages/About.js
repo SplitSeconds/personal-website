@@ -11,11 +11,14 @@ class About extends Component {
   }
   render() {
     return (
-      <div className="Secret">
+      <div className="headline">
         <h2>About</h2>
 
         <div className="result">
-          ...
+          <p>
+          Hi, I'm Nele! I'm a Full Stack Web Developer with a background in Social Media, Design and the Video Game Industry.
+          Tools of choice: Javascript, HTML & CSS, MongoDB, Express, React, Node, ES6, Photoshop and After Effects. I am highly passionate about technology and design and love to combine those fields.
+          </p>
         </div>
 
         

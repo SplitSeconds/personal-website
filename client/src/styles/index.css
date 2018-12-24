@@ -22,7 +22,9 @@ body {
   .App .App-header {
     background-color: grey;
     padding: 20px;
-    color: white; }
+    color: white;
+    display: flex;
+    justify-content: center; }
     .App .App-header a {
       color: white;
       padding: 0 5px;
@@ -33,6 +35,10 @@ body {
     font-size: 1.5em; }
   .App .App-intro {
     font-size: large; }
+  .App .social-icons {
+    display: flex; }
+  .App .icon {
+    width: 2vw; }
 
 @keyframes App-logo-spin {
   from {

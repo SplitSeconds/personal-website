@@ -46,6 +46,8 @@ body {
     background-color: grey;
     padding: 20px;
     color: white;
+    display: flex;
+    justify-content: center;
 
     a {
       color: white;
@@ -64,6 +66,14 @@ body {
 
   .App-intro {
     font-size: large;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+
+  .icon {
+    width: 2vw;
   }
 
   @keyframes App-logo-spin {

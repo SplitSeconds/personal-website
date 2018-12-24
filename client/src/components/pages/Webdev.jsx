@@ -36,7 +36,7 @@ class Webdev extends Component {
             <CardBody>
               <CardTitle>Code and Coffee</CardTitle>
               <CardSubtitle>Ironhack Coding Bootcamp project2</CardSubtitle>
-              <CardText>SAn app which helps you to find a café in your area to work from. Created with JS, Handlebars, MongoDB, Express, Mapbox and Cloudinary.</CardText>
+              <CardText>An app which helps you to find a café in your area to work from. Created with JS, Handlebars, MongoDB, Express, Mapbox and Cloudinary.</CardText>
               <Button>Button</Button>
             </CardBody>
           </Card>
