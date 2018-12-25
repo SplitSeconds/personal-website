@@ -55,3 +55,8 @@ body {
 
 .project {
   margin: 10px; }
+
+.profile-pic {
+  border-radius: 100px;
+  width: 150px;
+  margin: 10px; }
