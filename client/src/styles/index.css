@@ -49,6 +49,19 @@ body {
 .Home p {
   font-size: 1.2em; }
 
+.home-wrapper {
+  position: relative; }
+
+.text {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  right: 0;
+  bottom: 0; }
+
+.home-bg-picture {
+  width: 100vw; }
+
 .projects {
   display: flex;
   margin: 10px; }

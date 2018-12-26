@@ -8,9 +8,14 @@ class Home extends Component {
   // }
   render() {                
     return (
-      <div className="Home">
-        <h2>Home</h2>
-        <p>Coming soon...</p>
+      <div className="home-wrapper">
+        <div className="image">
+          <img src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545825885/My-Webpage/20975c29836243.5605c501e9f74.jpg" alt="Homepage picture" className="home-bg-picture" />
+        </div>
+        <div className="text">
+          <h2>Nele Lüpkes</h2>
+          <h3>Web Development, Motion and Graphic Design</h3>
+        </div>
       </div>
     );
   }
