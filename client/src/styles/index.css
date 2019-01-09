@@ -69,7 +69,14 @@ body {
 .project {
   margin: 10px; }
 
+.btn-link {
+  text-decoration: none !important;
+  color: white !important; }
+
 .profile-pic {
   border-radius: 100px;
   width: 150px;
   margin: 10px; }
+
+.about {
+  margin: 20px; }

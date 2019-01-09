@@ -119,7 +119,10 @@ body {
   margin: 10px;
 }
 
-
+.btn-link {
+  text-decoration: none !important;
+  color: white !important;
+}
 //--------------------
 // About page
 
@@ -127,4 +130,7 @@ body {
   border-radius: 100px;
   width: 150px;
   margin: 10px;
+}
+.about {
+  margin: 20px;
 }

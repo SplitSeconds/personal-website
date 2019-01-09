@@ -14,7 +14,7 @@ class About extends Component {
       <div className="headline">
         <h2>About</h2>
 
-        <div className="result">
+        <div className="about">
           <img className="profile-pic" alt="Bild von Nele" src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1542029569/worst-video-users/Unbenannt.PNG.png" />
 
           <p>
