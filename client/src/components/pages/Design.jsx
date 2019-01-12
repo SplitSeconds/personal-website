@@ -46,12 +46,12 @@ class Design extends Component {
 
 <div className="project-three project">
   <Card>
-    <CardImg top width="100%" src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545571067/My-Webpage/Stressgame.jpg" alt="project 1 picture" />
+    <CardImg top width="100%" src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545825885/My-Webpage/20975c29836243.5605c501e9f74.jpg" alt="project 1 picture" />
     <CardBody>
-      <CardTitle>The Stress Game</CardTitle>
-      <CardSubtitle>Ironhack Coding Bootcamp project1</CardSubtitle>
-      <CardText>A 2D Side Scroller Jump 'n' Run created with JavaScript and Canvas. The character and the background graphics were designed by myself, too.</CardText>
-      <Button>Button</Button>
+      <CardTitle>Self Portrait</CardTitle>
+      <CardSubtitle>Digitally painted self portrait</CardSubtitle>
+      <CardText>Done with Photoshop.</CardText>
+      <Button>Enlarge</Button>
     </CardBody>
   </Card>
 </div>

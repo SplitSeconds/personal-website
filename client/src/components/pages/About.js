@@ -19,7 +19,7 @@ class About extends Component {
 
           <p>
           Hi, I'm Nele! I'm a Full Stack Web Developer with a background in Social Media, Design and the Video Game Industry.
-          Tools of choice: Javascript, HTML & CSS, MongoDB, Express, React, Node, ES6, Photoshop and After Effects. I am highly passionate about technology and design and love to combine those fields.
+          Tools of choice: Javascript, HTML && CSS, MongoDB, Express, React, Node, ES6, Photoshop and After Effects. I am highly passionate about technology and design and love to combine those fields.
           </p>
 
           <p>
