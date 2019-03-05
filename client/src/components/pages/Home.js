@@ -9,13 +9,17 @@ class Home extends Component {
   render() {                
     return (
       <div className="home-wrapper">
-        <div className="image">
-          <img src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545825885/My-Webpage/20975c29836243.5605c501e9f74.jpg" alt="Homepage picture" className="home-bg-picture" />
+        
+        <video autoPlay muted loop id="myVideo">
+          <source type="video/mp4" src="https://res.cloudinary.com/dpjdxqrce/video/upload/v1551385922/My-Webpage/BGVideo.mp4" />
+        </video>
+
+        <div className="content">
+          <h1>Nele Lüpkes</h1>
+          <h3>Web Development // Motion and Graphic Design // Social Media</h3>
         </div>
-        <div className="text">
-          <h2>Nele Lüpkes</h2>
-          <h3>Web Development, Motion and Graphic Design</h3>
-        </div>
+
+
       </div>
     );
   }

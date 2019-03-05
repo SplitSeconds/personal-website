@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0;
@@ -52,12 +55,22 @@ body {
 .home-wrapper {
   position: relative; }
 
-.text {
-  position: absolute;
-  left: 0;
-  top: 100px;
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px; }
+
+#myVideo {
+  display: flex;
+  position: relative;
+  background-size: cover;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%; }
 
 .home-bg-picture {
   width: 100vw; }
