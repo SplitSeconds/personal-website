@@ -38,22 +38,6 @@ body {
 // Style for App component
 .App {
   text-align: center;
-
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px;
-  }
-
-  .App-header {
-    background-color:rgba(0, 0, 0, 0.5);;
-    padding: 20px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-
     a {
       color: white;
       padding: 0 5px;
@@ -64,45 +48,43 @@ body {
       font-weight: bold;
     }
   }
-
-  .App-title {
-    font-size: 1.5em;
-  }
-
-  .App-intro {
-    font-size: large;
-  }
-
-  .social-icons {
+.App-header {
+  background-color:rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+.header-content{
+    color: white;
     display: flex;
-  }
-
-  .icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.App-title{
+    font-size: 1.5em;
+}
+.App-intro{
+    font-size: large;
+}
+.social-icons{
+    display: flex;
+    margin-top: 10px;
+}
+.icon{
     width: 2vw;
-  }
-
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
-  }
 }
 
 // --------------------
 // Style for Home component
-.Home {
+.Home{
   p {
     font-size: 1.2em;
   }
 }
-.home-wrapper {
+.home-wrapper{
   position: relative;
 }
-.content {
+.content{
   position: fixed;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
@@ -110,13 +92,20 @@ body {
   width: 100%;
   padding: 20px;
 }
-#myVideo {
+#myVideo{
   display: flex;
   position: relative;
   background-size: cover;
 }
-.home-bg-picture {
+.home-bg-picture{
   width: 100vw;
+}
+
+// --------------------
+// Style for Portfolio component
+.portfolio{
+  display: flex;
+  margin: 10px;
 }
 
 // --------------------
@@ -125,29 +114,41 @@ body {
   display: flex;
   margin: 10px;
 }
-
-.project {
+.project{
   margin: 10px;
 }
-
-.btn-link {
+.btn-link{
   text-decoration: none !important;
   color: white !important;
-}
+} 
+
 //--------------------
 // About page
-
-.profile-pic {
+.about{
+  margin-top: 20px;
+}
+.profile-pic{
   border-radius: 100px;
   width: 150px;
   margin: 10px;
 }
-.about {
+.about-container{
   margin: 20px;
+}
+.about-text{
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+//--------------------
+// Blog
+.blog{
+  margin-top: 20px;
 }
 
 //---------------
-// Impressumg
+// Impressum
 .impressum{
   margin-top: 20px;
 }

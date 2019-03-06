@@ -19,38 +19,37 @@ body {
 
 .App {
   text-align: center; }
-  .App .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 80px; }
-  .App .App-header {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+  .App a {
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center; }
-    .App .App-header a {
-      color: white;
-      padding: 0 5px;
-      text-decoration: unset; }
-    .App .App-header a.active {
-      font-weight: bold; }
-  .App .App-title {
-    font-size: 1.5em; }
-  .App .App-intro {
-    font-size: large; }
-  .App .social-icons {
-    display: flex; }
-  .App .icon {
-    width: 2vw; }
+    padding: 0 5px;
+    text-decoration: unset; }
+  .App a.active {
+    font-weight: bold; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.App-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px; }
+
+.header-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+.social-icons {
+  display: flex;
+  margin-top: 10px; }
+
+.icon {
+  width: 2vw; }
 
 .Home p {
   font-size: 1.2em; }
@@ -74,6 +73,10 @@ body {
 .home-bg-picture {
   width: 100vw; }
 
+.portfolio {
+  display: flex;
+  margin: 10px; }
+
 .projects {
   display: flex;
   margin: 10px; }
@@ -85,13 +88,24 @@ body {
   text-decoration: none !important;
   color: white !important; }
 
+.about {
+  margin-top: 20px; }
+
 .profile-pic {
   border-radius: 100px;
   width: 150px;
   margin: 10px; }
 
-.about {
+.about-container {
   margin: 20px; }
+
+.about-text {
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px; }
+
+.blog {
+  margin-top: 20px; }
 
 .impressum {
   margin-top: 20px; }
