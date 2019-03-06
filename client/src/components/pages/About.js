@@ -1,14 +1,6 @@
 import React, { Component } from 'react';
-import api from '../../api';
 
 class About extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      secret: null,
-      message: null
-    }
-  }
   render() {
     return (
       <div className="about">
@@ -32,11 +24,6 @@ class About extends Component {
         
       </div>
     );
-  }
-  componentDidMount() {
-    api.getSecret()
-      .then(data => this.setState({ secret: data.secret }))
-      .catch(err => this.setState({ message: err.toString() }))
   }
 }
 

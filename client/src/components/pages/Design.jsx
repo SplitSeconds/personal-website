@@ -2,13 +2,6 @@ import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle, Button } from 'reactstrap';
 
 class Design extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      secret: null,
-      message: null
-    }
-  }
   render() {
     return (
       <div className="Secret">

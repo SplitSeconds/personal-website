@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 
 class Blog extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      countries: []
-    }
-  }
   render() {
     return (
       <div className="blog">
