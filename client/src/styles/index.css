@@ -23,11 +23,14 @@ body {
     animation: App-logo-spin infinite 20s linear;
     height: 80px; }
   .App .App-header {
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     color: white;
     display: flex;
-    justify-content: center; }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center; }
     .App .App-header a {
       color: white;
       padding: 0 5px;
@@ -66,11 +69,7 @@ body {
 #myVideo {
   display: flex;
   position: relative;
-  background-size: cover;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%; }
+  background-size: cover; }
 
 .home-bg-picture {
   width: 100vw; }
@@ -93,3 +92,11 @@ body {
 
 .about {
   margin: 20px; }
+
+.impressum {
+  margin-top: 20px; }
+
+.impressum-p {
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px; }

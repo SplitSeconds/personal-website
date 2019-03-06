@@ -11,7 +11,7 @@ class Home extends Component {
       <div className="home-wrapper">
         
         <video autoPlay muted loop id="myVideo">
-          <source type="video/mp4" src="https://res.cloudinary.com/dpjdxqrce/video/upload/v1551385922/My-Webpage/BGVideo.mp4" />
+          <source type="video/mp4" src="https://res.cloudinary.com/dpjdxqrce/video/upload/v1551812106/My-Webpage/VideoBackground.mp4" />
         </video>
 
         <div className="content">
