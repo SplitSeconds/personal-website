@@ -5,9 +5,9 @@ class Home extends Component {
     return (
       <div className="home-wrapper">
         
-        <video autoPlay muted loop id="myVideo">
+        {/* <video autoPlay muted loop id="myVideo">
           <source type="video/mp4" src="https://res.cloudinary.com/dpjdxqrce/video/upload/v1551812106/My-Webpage/VideoBackground.mp4" />
-        </video>
+        </video> */}
 
         <div className="content">
           <h1>Nele Lüpkes</h1>

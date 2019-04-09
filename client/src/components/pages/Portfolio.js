@@ -9,10 +9,11 @@ class Portfolio extends Component {
   render() {
     return (
       
-      <div className="Portfolio projects">
+      <div className="portfolio">
+      <div className="projects">
         <div className="design project">
-          <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Design picture" />
+          <Card className="card">
+            <CardImg top width="100%" src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1545825885/My-Webpage/20975c29836243.5605c501e9f74.jpg" alt="Design picture" />
             <CardBody>
               <CardTitle>Design and Illustration Projects</CardTitle> 
               <Button><NavLink to="/design">See more</NavLink></Button>
@@ -22,7 +23,7 @@ class Portfolio extends Component {
 
         <div className="webdev project">
           <Card>
-            <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Webdev picture" />
+            <CardImg top width="100%" src="https://res.cloudinary.com/dpjdxqrce/image/upload/v1546002318/My-Webpage/Moodify.jpg" alt="Webdev picture" />
             <CardBody>
               <CardTitle>Webdevelopment and Webdesign Projects</CardTitle> 
               <Button><NavLink to="/webdev">See more</NavLink></Button>
@@ -34,6 +35,7 @@ class Portfolio extends Component {
           <Route path="/design" component={Design} />
           <Route path="/webdev" component={Webdev} />
       </Switch>
+      </div>
       </div>
     );
   }
